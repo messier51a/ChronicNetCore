@@ -10,6 +10,9 @@ dateTime = ChronicNetCore.Parse('monday', new Options() { Context = Pointer.Type
 
 dateTime = ChronicNetCore.Parse('this tuesday 5:00').ToTime(); //Tue May 16 17:00:00 PDT 2017
 
+ For invalid date ChronicNetCore.Parse returns null, not throwing exception, which may feels unusual compare with most .Net Parse methods (e.g. [DateTime.Parse](https://docs.microsoft.com/en-us/dotnet/api/system.datetime.parse?view=net-6.0) )
+
+
 For more information and examples visit https://github.com/mojombo/chronic
 # Credits
 This is a port of https://github.com/robertwilczynski/nChronic. Please see this project for further credits.
